@@ -1,11 +1,12 @@
 import React from "react";
 
 class SolutionPresenter extends React.Component {
+
     render() {
-        return (
-            <div><span>
-                solution</span></div>
-        );
+        if (this.props.isVisible) {
+            return (<span>solution</span>);
+        }
+        return null;
     }
 }
 
